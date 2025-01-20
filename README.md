@@ -60,7 +60,7 @@ To interact with the GitHub API, you will need a GitHub Personal Access Token (P
 1. Go to [GitHub Personal Access Tokens](https://github.com/settings/tokens)
 2. Click on Generate new token.
 3. Select the necessary scopes:
-    - repo (for repository access)
+    - repo (for full repository access)
     - public_repo (for public repositories)
 4. Copy the token you generate (you will not be able to view it again).
 
@@ -100,7 +100,6 @@ The script will prompt you to enter the repository name. Based on your inputs, i
 ### Troubleshooting
 - If the token is not set properly: You will see an error message indicating that the GITHUB_TOKEN environment variable is missing. Double-check that your .env file is correctly formatted or that you’ve set the token in your terminal session.
 - If you run into authentication issues: Ensure that the token has the correct permissions (i.e., the repo scope for private repositories or public_repo for public ones).
-- Rate Limiting: If you hit GitHub’s rate limit, the script will notify you. You will need to wait until the rate limit resets or use a token with higher privileges.
 
 ### Dependencies
 This project requires the following Python packages:
@@ -111,7 +110,7 @@ You can install the dependencies by running:
 pip install -r requirements.txt
 ```
 
-requirements.txt
+#### 'requirements.txt'
 Here’s the content of the requirements.txt file:
 ```bash
 PyGithub==2.5.0
