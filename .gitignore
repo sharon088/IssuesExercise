@@ -1,0 +1,12 @@
+# exclude all
+*
+!*/
+
+# but these file type
+!*.py
+!*.md
+
+#and these also
+!.gitignore
+!.env
+
