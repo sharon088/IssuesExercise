@@ -22,7 +22,7 @@ cd IssuesExercise
 ```
 
 ### Step 2: Set Up a Virtual Environment
-On Windows:
+**On Windows:**
 1. Open a Command Prompt or PowerShell window.
 2. Create a virtual environment:
 ```bash
@@ -39,7 +39,7 @@ venv\Scripts\activate
 .\venv\Scripts\Activate.ps1
 ```
 
-On Linux/macOS:
+**On Linux/macOS:**
 1. Open a Command Prompt or PowerShell window.
 2. Create a virtual environment:
 ```bash
@@ -80,7 +80,7 @@ On Windows (Command Prompt or PowerShell):
 set GITHUB_TOKEN=your_personal_access_token_here
 ```
 
-On Linux/macOS (Terminal):
+**On Linux/macOS (Terminal):**
 ```bash
 export GITHUB_TOKEN=your_personal_access_token_here
 ```
