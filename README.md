@@ -110,7 +110,7 @@ You can install the dependencies by running:
 pip install -r requirements.txt
 ```
 
-#### 'requirements.txt'
+#### requirements.txt
 Here’s the content of the requirements.txt file:
 ```bash
 PyGithub==2.5.0
