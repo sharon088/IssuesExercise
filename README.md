@@ -57,15 +57,15 @@ pip install -r requirements.txt
 ```
 ### 4: Generate GitHub Personal Access Token
 To interact with the GitHub API, you will need a GitHub Personal Access Token (PAT):
-1. Go to GitHub Personal Access Tokens.
+1. Go to [GitHub Personal Access Tokens](https://github.com/settings/tokens)
 2. Click on Generate new token.
 3. Select the necessary scopes:
- - repo (for repository access)
- - public_repo (for public repositories)
+    - repo (for repository access)
+    - public_repo (for public repositories)
 4. Copy the token you generate (you will not be able to view it again).
 
 ### Step 5: Set the GitHub Token
-Method 1: Using .env File (If using Visual studio code)
+## Method 1: Using .env File (If using Visual studio code)
 1. In the project directory, create a file named .env.
 2. Inside the .env file, add the following line:
 ```bash
@@ -73,7 +73,7 @@ GITHUB_TOKEN=your_personal_access_token_here
 ```
 Replace your_personal_access_token_here with the token you generated in Step 4.
 
-Method 2: Set Token in the Terminal (If Not Using VS Code)
+## Method 2: Set Token in the Terminal (If Not Using VS Code)
 If you're not using Visual Studio Code or an IDE that automatically loads the .env file, you need to manually set the GITHUB_TOKEN environment variable before running the script.
 On Windows (Command Prompt or PowerShell):
 ```bash
