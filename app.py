@@ -48,14 +48,13 @@ def close_issue(repo: Repository, issue_number: int) -> None:
 # Function to authenticate and get the repository object
 def authenticate_and_get_repo(repo_name: str) -> Optional[Repository]:
     try:
-        ret_repo = None 
         auth = Auth.Token(TOKEN)
         g = Github(auth=auth)  # Authenticate with GitHub
         for repox in g.get_user().get_repos():
             if repo_name == repox.name:
-                ret_repo = g.get_repo(repox.full_name)  # Get the repository
-                break
-        return ret_repo
+                return g.get_repo(repox.full_name)  # Get the repository
+        print("Couldn't find the repository. Please try again.")
+        return None
     except GithubException as e:
         print(f"Error authenticating or accessing repository: {e}")
         return None
@@ -65,12 +64,12 @@ def authenticate_and_get_repo(repo_name: str) -> Optional[Repository]:
 
 # Main program that interacts with the user
 def main() -> None:
-    repo_name = input("Enter the repository name: ")
-
-    repo = authenticate_and_get_repo(repo_name)
-    if repo is None:
-        print("Couldn't find repo name")
-        return  # Exit if repo cannot be accessed
+    while True:
+        repo_name = input("Enter the repository name: ")
+        repo = authenticate_and_get_repo(repo_name)
+        if repo is None:
+            continue  # If repo is not found , try again
+        break  # Exit the loop if repository is found and accessible
 
     while True:
         print("\nSelect an option:")
