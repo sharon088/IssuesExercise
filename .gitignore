@@ -2,6 +2,10 @@
 *
 !*/
 
+# dont allow
+.venv
+venv
+
 # but these file type
 !*.py
 !*.md
