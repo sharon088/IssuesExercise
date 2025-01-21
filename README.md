@@ -75,12 +75,11 @@ Replace your_personal_access_token_here with the token you generated in Step 4.
 
 #### Method 2: Set Token in the Terminal (If Not Using VS Code)
 If you're not using Visual Studio Code or an IDE that automatically loads the .env file, you need to manually set the GITHUB_TOKEN environment variable before running the script.
-On Windows (Command Prompt):
+**On Windows (Command Prompt (CMD)):**
 ```bash
 set GITHUB_TOKEN=your_personal_access_token_here
 ```
-
-On Windows (PowerShell):
+**On Windows (PowerShell):**
 ```bash
 $env:GITHUB_TOKEN="your_personal_access_token_here"
 ```
