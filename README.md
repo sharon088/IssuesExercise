@@ -30,11 +30,11 @@ python3 -m venv venv  # or python -m venv venv if python3 is not required
 ```
 
 3. Activate the virtual environment:
-- For Command Prompt:
+- For Command Prompt ( Windows CMD ):
 ```bash
 venv\Scripts\activate
 ```
-- For PowerShell:
+- For PowerShell ( Windows ):
 ```bash
 .\venv\Scripts\Activate.ps1
 ```
