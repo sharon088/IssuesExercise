@@ -26,7 +26,7 @@ cd IssuesExercise
 1. Open a Command Prompt or PowerShell window.
 2. Create a virtual environment:
 ```bash
-python -m venv venv
+python3 -m venv venv  # or python -m venv venv if python3 is not required
 ```
 
 3. Activate the virtual environment:
@@ -43,7 +43,7 @@ venv\Scripts\activate
 1. Open a Command Prompt or PowerShell window.
 2. Create a virtual environment:
 ```bash
-python3 -m venv venv
+python3 -m venv venv  # or python -m venv venv if python3 is not required
 ```
 3. Activate the virtual environment: 
 ```bash
@@ -92,7 +92,7 @@ export GITHUB_TOKEN=your_personal_access_token_here
 ### Step 6: Run the Script
 Once the virtual environment is set up and the dependencies are installed, you can run the script:
 ```bash
-python app.py
+python3 -m venv venv  # or python3 app.py if python3 is not required
 ```
 
 The script will prompt you to enter the repository name. Based on your inputs, it will allow you to:
