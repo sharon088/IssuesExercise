@@ -94,7 +94,7 @@ export GITHUB_TOKEN=your_personal_access_token_here
 ### Step 6: Run the Script
 Once the virtual environment is set up and the dependencies are installed, you can run the script:
 ```bash
-python3 -m venv venv  # or python3 app.py if python3 is not required
+python3 -m app.py # or python app.py if python3 is not required
 ```
 
 The script will prompt you to enter the repository name. Based on your inputs, it will allow you to:
