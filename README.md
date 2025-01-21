@@ -22,6 +22,7 @@ cd IssuesExercise
 ```
 
 ### Step 2: Set Up a Virtual Environment
+
 **On Windows:**
 1. Open a Command Prompt or PowerShell window.
 2. Create a virtual environment:
