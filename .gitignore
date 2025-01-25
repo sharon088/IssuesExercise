@@ -9,6 +9,7 @@ venv
 # but these file type
 !*.py
 !*.md
+!*.txt
 
 #and these also
 !.gitignore

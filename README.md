@@ -22,19 +22,20 @@ cd IssuesExercise
 ```
 
 ### Step 2: Set Up a Virtual Environment
+
 **On Windows:**
 1. Open a Command Prompt or PowerShell window.
 2. Create a virtual environment:
 ```bash
-python -m venv venv
+python3 -m venv venv  # or python -m venv venv if python3 is not required
 ```
 
 3. Activate the virtual environment:
-- For Command Prompt:
+- For Command Prompt ( Windows CMD ):
 ```bash
 venv\Scripts\activate
 ```
-- For PowerShell:
+- For PowerShell ( Windows ):
 ```bash
 .\venv\Scripts\Activate.ps1
 ```
@@ -43,7 +44,7 @@ venv\Scripts\activate
 1. Open a Command Prompt or PowerShell window.
 2. Create a virtual environment:
 ```bash
-python3 -m venv venv
+python3 -m venv venv  # or python -m venv venv if python3 is not required
 ```
 3. Activate the virtual environment: 
 ```bash
@@ -75,12 +76,12 @@ Replace your_personal_access_token_here with the token you generated in Step 4.
 
 #### Method 2: Set Token in the Terminal (If Not Using VS Code)
 If you're not using Visual Studio Code or an IDE that automatically loads the .env file, you need to manually set the GITHUB_TOKEN environment variable before running the script.
-On Windows (Command Prompt):
+
+**On Windows (Command Prompt (CMD)):**
 ```bash
 set GITHUB_TOKEN=your_personal_access_token_here
 ```
-
-On Windows (PowerShell):
+**On Windows (PowerShell):**
 ```bash
 $env:GITHUB_TOKEN="your_personal_access_token_here"
 ```
@@ -93,7 +94,7 @@ export GITHUB_TOKEN=your_personal_access_token_here
 ### Step 6: Run the Script
 Once the virtual environment is set up and the dependencies are installed, you can run the script:
 ```bash
-python app.py
+python3 -m app.py # or python app.py if python3 is not required
 ```
 
 The script will prompt you to enter the repository name. Based on your inputs, it will allow you to:
