@@ -119,5 +119,4 @@ pip install -r requirements.txt
 Here’s the content of the requirements.txt file:
 ```bash
 PyGithub==2.5.0
-python-dotenv==1.0.1
 ```

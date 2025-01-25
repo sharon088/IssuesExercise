@@ -2,7 +2,6 @@ from github import Github
 import os
 from github.Repository import Repository
 from github.GithubException import GithubException
-from dotenv import load_dotenv
 from typing import Optional
 
 # Authentication is defined via github.Auth
@@ -52,7 +51,7 @@ def authenticate_and_get_repo(repo_name: str) -> Optional[Repository]:
         g = Github(auth=auth)  # Authenticate with GitHub
         for repox in g.get_user().get_repos():
             if repo_name == repox.name:
-                return g.get_repo(repox.full_name)  # Get the repository
+                return g.get_repo(repox.full_name)  
         print("Couldn't find the repository. Please try again.")
         return None
     except GithubException as e:
